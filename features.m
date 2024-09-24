@@ -10,6 +10,6 @@ function [fpos, fneg] = features(pathPos,pathNeg)
     for i = 1:length(imlist)
         im = imread([pathNeg imlist(i).name]);
         fneg{i} = HOG(double(im));
-    end
+    e
 
 end
