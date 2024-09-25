@@ -15,6 +15,6 @@ for i = 1:length(imlist)
     im = imread([pathNeg imlist(i).name]);
     I = flipdim(im ,2);
     imwrite(I,[pathNeg 'fliped_' imlist(i).name]);
-e
+end
 
 end
