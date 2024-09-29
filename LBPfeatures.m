@@ -22,5 +22,5 @@ function [fullFace, PartFace] = LBPfeatures(pathFull, pathPartial)
         end
         PartFace(i,:) = extractLBPFeatures(img);
     end
-e
+end
 
