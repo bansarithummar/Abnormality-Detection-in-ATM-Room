@@ -1,4 +1,4 @@
-function faceCount = ViolaJones(sampleFrame)
+function faceCount = ViolaJones(sampleFra)
 
 %To detect Face
 FDetect = vision.CascadeObjectDetector;
