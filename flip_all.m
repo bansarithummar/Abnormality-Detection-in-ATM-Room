@@ -7,7 +7,7 @@ for i = 1:length(imlist)
     im = imread([pathPos imlist(i).name]);
     I = flipdim(im ,2);
     imwrite(I,[pathPos 'fliped_' imlist(i).name]);
-e
+end
 
 % neg images
 imlist = dir([pathNeg '*.png']);
