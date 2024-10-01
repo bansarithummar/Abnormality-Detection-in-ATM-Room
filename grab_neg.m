@@ -26,7 +26,7 @@ for j = 1:length(imlist)/4
     
     i = i+4;
     fprintf('fram number %d \n', j);
-e
+end
 
 end
 
