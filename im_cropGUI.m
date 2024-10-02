@@ -20,5 +20,5 @@ for j = counter+1:length(imlist)
     fprintf('fram number %d \n', j);
     counter = j;
     save counter counter;
-end
+e
 
