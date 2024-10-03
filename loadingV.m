@@ -31,5 +31,5 @@ for j=1:length(fneg)
         V{2,end} = out_min;
         V(3,end) = {IM{i}};
     end    
-e
+end
 fprintf('\n');
