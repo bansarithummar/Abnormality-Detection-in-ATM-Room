@@ -11,4 +11,4 @@ bottomRightCol = ceil(max(crop_py));
 
 cropedImage = img(topLeftCol:bottomRightCol,topLeftRow:bottomRightRow,:);
 
-end
+e
