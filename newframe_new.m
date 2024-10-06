@@ -20,7 +20,7 @@ mov = VideoReader(fname);
 outputFolder = fullfile(cd, 'frames');
 if ~exist(outputFolder, 'dir')
     mkdir(outputFolder);
-e
+end
 
 %getting no of frames
 
