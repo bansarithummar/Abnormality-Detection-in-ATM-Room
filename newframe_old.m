@@ -38,6 +38,6 @@ for frame = 1 : numberOfFrames
         %disp(progressIndication);
     end
     numberOfFramesWritten = numberOfFramesWritten + 1;
-end
+e
 %progressIndication = sprintf('Wrote %d frames to folder "%s"',numberOfFramesWritten,outputFolder);
 %disp(progressIndication);
