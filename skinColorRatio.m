@@ -15,4 +15,4 @@ skincolor = size(r,1);
 skinColorRatio = (skincolor / (height*width)) * 100;
 prn = ['skin color ratio is : ', num2str(skinColorRatio)];
 disp(prn);
-end
+e
