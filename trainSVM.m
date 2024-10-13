@@ -6,5 +6,5 @@ function [ model ] = trainSVM( fpos,fneg )
     disp(SV);
     model = svmlearn(P, T', '-t -g 0.3 -c 0.5');
     fprintf('done. \n');
-end
+e
 
