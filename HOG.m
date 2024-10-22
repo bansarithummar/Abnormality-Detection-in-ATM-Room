@@ -8,4 +8,4 @@ clipping_L2norm = 0.2;
 
 HOGv = HoG(I,[orientation_bins, cell_size, block_size, oriented_gradients, clipping_L2norm]);
 
-endd
+end
