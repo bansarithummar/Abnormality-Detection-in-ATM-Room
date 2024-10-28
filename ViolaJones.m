@@ -1,6 +1,6 @@
 function faceCount = ViolaJones(sampleFrame)
 
-%To detect Fa
+%To detect Face
 FDetect = vision.CascadeObjectDetector;
 
 %Returns Bounding Box values based on number of objects
