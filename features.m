@@ -12,4 +12,4 @@ function [fpos, fneg] = features(pathPos,pathNeg)
         fneg{i} = HOG(double(im));
     end
 
-end
+endd
