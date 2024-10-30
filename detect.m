@@ -25,7 +25,7 @@ for y = topLeftCol:bottomRightCol-wSize(2)
         fcount = fcount+1;
         x = x+1;
     end
-endd
+end
 
 lebel = ones(length(featureVector),1);
 P = cell2mat(featureVector);
