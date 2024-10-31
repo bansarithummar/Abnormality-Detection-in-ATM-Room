@@ -19,3 +19,4 @@ for i = 1:size(BB,1)
 end
 title('Face Detection');
 hold off;
+////////////
