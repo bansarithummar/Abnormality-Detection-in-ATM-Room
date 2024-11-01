@@ -20,7 +20,7 @@ else
     [fpos, fneg] = features(pathPos, pathNeg);  % extract features
     [ model ] = trainSVM( fpos,fneg );          % train SVM
     save model model;
-endd
+end
 if exist('LBPmodel.mat','file')
     load LBPModel;
 else
