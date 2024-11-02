@@ -28,5 +28,5 @@ for j = 1:length(imlist)/4
     fprintf('fram number %d \n', j);
 end
 
-end
+endd
 
