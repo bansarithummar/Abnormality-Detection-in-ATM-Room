@@ -17,4 +17,4 @@ for i = 1:length(imlist)
     imwrite(I,[pathNeg 'fliped_' imlist(i).name]);
 end
 
-endd
+end
