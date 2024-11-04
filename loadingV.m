@@ -19,7 +19,7 @@ for k=1:length(fpos)
         V{2,end} = out_max;
         V(3,end) = {IM{i}};
     end    
-endd
+end
 
 fprintf ('\nLoading negetive examples ');
 for j=1:length(fneg)
