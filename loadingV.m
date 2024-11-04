@@ -6,7 +6,7 @@ if exist('V.mat','file')
     load V;
 else
     V = cell (3,[]);
-end
+endd
 
 fprintf ('Loading positive images ');
 
