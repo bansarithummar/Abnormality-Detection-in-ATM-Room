@@ -28,7 +28,7 @@ for frame = 1 : numberOfFrames
     
         progressIndication = sprintf('Wrote frame %4d of %d.', frame,numberOfFrames);
         disp(progressIndication);
-    enddd
+    end
     numberOfFramesWritten = numberOfFramesWritten + 1;
 progressIndication = sprintf('Wrote %d frames to folder "%s"',numberOfFramesWritten,outputFolder);
 disp(progressIndication);
