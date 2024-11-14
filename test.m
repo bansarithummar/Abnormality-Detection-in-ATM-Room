@@ -1,4 +1,4 @@
-% This is for pathh
+% This is for path
 
 pathFull = './dataset/clear face/'; % clear face
 pathPartial = './dataset/Partial Face/'; % partial face
