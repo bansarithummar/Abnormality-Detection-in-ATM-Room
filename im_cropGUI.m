@@ -21,4 +21,3 @@ for j = counter+1:length(imlist)
     counter = j;
     save counter counter;
 end
-
