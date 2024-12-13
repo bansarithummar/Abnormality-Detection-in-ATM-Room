@@ -17,7 +17,6 @@ if ~exist(outputFolder, 'dir')
 end
 
 %getting no of frames
-
 numberOfFrames = mov.NumberOfFrames;
 numberOfFramesWritten = 0;
 for frame = 225 : 235
