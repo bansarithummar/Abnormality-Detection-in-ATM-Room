@@ -2,7 +2,6 @@ clc;
 close all;
 
 % Open an sample avi file
-
 fnames = dir('D:\Database\*.mp4');
 tradata = cell(1,length(fnames));
 for k=1:length(fnames)
