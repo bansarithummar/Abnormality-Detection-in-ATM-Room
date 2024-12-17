@@ -11,6 +11,7 @@ function [fullFace, PartFace] = LBPfeatures(pathFull, pathPartial)
         end
         fullFace(i,:) = extractLBPFeatures(img);
     end
+    
     % extract features for negative examples
     imlist = dir([pathPartial '*.png']);
     PartFace = zeros(length(imlist),59);
