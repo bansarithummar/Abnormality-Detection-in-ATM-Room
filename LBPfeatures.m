@@ -1,5 +1,4 @@
-function [fullFace, PartFace] = LBPfeatures(pathFull, pathPartial)
-    
+function [fullFace, PartFace] = LBPfeatures(pathFull, pathPartial)   
     imlist = dir([pathFull '*.png']);
     fullFace = zeros(length(imlist),59);
     for i = 1:length(imlist)
