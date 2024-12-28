@@ -7,9 +7,9 @@ clc;
 addpath './svm_mex601/matlab/';
 addpath './svm_mex601/bin/';
 
-pathPos = './dataset/faces/';       % positive example
-pathNeg = './dataset/non-faces/';   % negative example
-pathFull = './dataset/clear face/'; % clear face
+pathPos = './dataset/faces/';            % positive example
+pathNeg = './dataset/non-faces/';        % negative example
+pathFull = './dataset/clear face/';      % clear face
 pathPartial = './dataset/Partial Face/'; % partial face
 
 
@@ -21,6 +21,7 @@ else
     [ model ] = trainSVM( fpos,fneg );          % train SVM
     save model model;
 end
+
 if exist('LBPmodel.mat','file')
     load LBPModel;
 else
