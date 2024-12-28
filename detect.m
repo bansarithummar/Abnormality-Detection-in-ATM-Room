@@ -37,4 +37,3 @@ bBox = cell2mat(boxPoint(indx));
 rectangle('Position',[bBox(1),bBox(2),24,32],'LineWidth',1, 'EdgeColor','r');
 end
 
-
