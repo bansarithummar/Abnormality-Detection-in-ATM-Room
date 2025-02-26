@@ -4,7 +4,6 @@ this function will take three parameters
     1.	im		--> Test Image
     2.	model	--> trained model
     3.	wStize 	--> Size of the window, i.e. [24,32]
-and draw rectangle on best estimated window
 %}
 
 topLeftRow = 1;
