@@ -36,15 +36,15 @@ end
 
 %% Detection 
 tSize = [24, 32];
-videoPath='D:\Dissertation\Oclussion_ Database\*.mp4';
+videoPath='*:\*****\Oclussion_ Database\*.mp4';
 fnames = dir(videoPath);
 tradata = cell(1,length(fnames));
 disp(length(fnames));
 for k=1:length(fnames)
   fname = fnames(k).name;
   %tradata{k} = dlmread(fname, ';', [82 2 1168 2]);
-%[FileName,PathName] = uigetfile('*.mp4','D:\video');
-%file = fullfile('H:\...\video16.mp4');
+%[FileName,PathName] = uigetfile('*.mp4','*:\video');
+%file = fullfile('*:\...\video16.mp4');
 
 %filename = '.\003.AVI';
   disp(fname);
