@@ -42,11 +42,8 @@ tradata = cell(1,length(fnames));
 disp(length(fnames));
 for k=1:length(fnames)
   fname = fnames(k).name;
-  %tradata{k} = dlmread(fname, ';', [82 2 1168 2]);
-%[FileName,PathName] = uigetfile('*.mp4','*:\video');
-%file = fullfile('*:\...\video16.mp4');
 
-%filename = '.\003.AVI';
+
   disp(fname);
   mov = VideoReader(fname);
 
@@ -57,9 +54,7 @@ numberOfFramesWritten = 0;
 for frame = 1 : numberOfFrames
     thisFrame = read(mov, frame);
     thisFrame = imrotate(thisFrame,-90);
-    %outputBaseFileName = sprintf('%3.3d.png', frame);
-    %outputFullFileName = fullfile(outputFolder, outputBaseFileName);
-    %imwrite(thisFrame, outputFullFileName, 'png');
+    
     rem = mod(frame,100);
     if(rem==0)
         printData = ['Reading Frame Number : ', num2str(frame), ' from video : ',fname];    
@@ -69,7 +64,7 @@ for frame = 1 : numberOfFrames
         imshow(Img); hold on;
         bBox = detect(Img,model,tSize);
         I = imcrop(Img,[bBox(1) bBox(2) 24 32]);
-        %imshow(I);hold on;
+  
         skinColorRatio = skinColorRatio(I);
         I1 = rgb2gray(I);
         
@@ -80,9 +75,8 @@ for frame = 1 : numberOfFrames
 
         end
         testFeatures =  extractLBPFeatures(I1);
-        %lebel = ones(1,length(testFeatures));
-        %LBPmodel = trainSVM( fullFace,PartFace );
-        [~,predictedLabels] = predict(LBPModel,testFeatures); %#ok<SVMCLASSIFY>
+      
+        [~,predictedLabels] = predict(LBPModel,testFeatures); 
         [~,index]=max(predictedLabels);
         
         
@@ -102,13 +96,12 @@ for frame = 1 : numberOfFrames
         outputBaseFileName = sprintf('%3.3d.png', frame);
         outputFullFileName = fullfile('./results/', outputBaseFileName);
         imwrite(I, outputFullFileName, 'png');
-        %saveas(I, ['./results/' num2str(frame)], 'png');
+        
         close all;
         clear ('I','img','bBox','s','skinColorRatio','I1','testFeatures','predictedLabels','index');
     else
-        %progressIndication = sprintf('Wrote frame %4d of %d.', frame,numberOfFrames);
-        %disp(progressIndication);
+        
     end
 end
-%progressIndication = sprintf('Wrote %d frames to folder "%s"',numberOfFramesWritten,outputFolder);
+
 end
