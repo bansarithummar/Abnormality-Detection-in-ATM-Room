@@ -1,6 +1,5 @@
 function flip_all(pathPos, pathNeg)
 
-
 % positive images
 imlist = dir([pathPos '*.png']);
 for i = 1:length(imlist)
