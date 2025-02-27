@@ -6,7 +6,7 @@ clc
 FDetect = vision.CascadeObjectDetector;
 
 %Read the input image
-I = imread('D:\Dissertation\disseratation code\video16\245.png');
+I = imread('*:\***********\245.png');
 
 %Returns Bounding Box values based on number of objects
 BB = step(FDetect,I);
