@@ -10,7 +10,9 @@ if exist('counter.mat','file')
 else
     counter = 1;
 end
+
 imlist = dir([inputImagePath file_ext]);
+
 for j = counter+1:length(imlist)
     img = imread([inputImagePath imlist(j).name]);
     imshow(img);
@@ -20,4 +22,5 @@ for j = counter+1:length(imlist)
     fprintf('fram number %d \n', j);
     counter = j;
     save counter counter;
+
 end
