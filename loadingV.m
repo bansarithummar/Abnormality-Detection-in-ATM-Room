@@ -19,9 +19,11 @@ for k=1:length(fpos)
         V{2,end} = out_max;
         V(3,end) = {IM{i}};
     end    
+
 end
 
 fprintf ('\nLoading negetive examples ');
+
 for j=1:length(fneg)
     fprintf ('.');
     IM{1} = fneg{j}';
