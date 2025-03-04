@@ -14,5 +14,6 @@ skincolor = size(r,1);
 %Mark Skin Pixels
 skinColorRatio = (skincolor / (height*width)) * 100;
 prn = ['skin color ratio is : ', num2str(skinColorRatio)];
+
 disp(prn);
 end
