@@ -7,4 +7,5 @@ oriented_gradients = 1; % 0 otherwise
 clipping_L2norm = 0.2;
 
 HOGv = HoG(I,[orientation_bins, cell_size, block_size, oriented_gradients, clipping_L2norm]);
+
 end
